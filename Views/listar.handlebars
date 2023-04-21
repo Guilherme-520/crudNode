@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Origem</th>
+        <th>Data contato</th>
+        <th>Observação</th>
+    </thead>
+    <tbody>
+        {{#each post}}
+        {{#dataValues}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nome}}</td>
+            <td>{{telefone}}</td>
+            <td>{{origem}}</td>
+            <td>{{dataC}}</td>
+            <td>{{observacao}}</td>
+        </tr>
+        {{/dataValues}}
+        {{/each}}
+
+
+    </tbody>
+</table>
